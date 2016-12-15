@@ -15,7 +15,7 @@ class usuarioController extends Controller {
 	public function index()
 	{
 		//
-        echo "hola";
+
 	}
 
 	/**
