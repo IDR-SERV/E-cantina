@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace ecantina;
 
 use Illuminate\Database\Eloquent\Model;
 
