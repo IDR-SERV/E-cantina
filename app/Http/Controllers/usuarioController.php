@@ -1,7 +1,7 @@
-<?php namespace App\Http\Controllers;
+<?php namespace ecantina\Http\Controllers;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use ecantina\Http\Requests;
+use ecantina\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace ecantina\Events;
 
 abstract class Event {
 

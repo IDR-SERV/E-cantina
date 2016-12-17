@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace ecantina\Commands;
 
 abstract class Command {
 
