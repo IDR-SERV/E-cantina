@@ -4,9 +4,8 @@ use ecantina\Config;
 
 class HomeController extends Controller {
 
-
-
-	/*
+    protected $config;
+    /*
 	|--------------------------------------------------------------------------
 	| Home Controller
 	|--------------------------------------------------------------------------
@@ -32,22 +31,38 @@ class HomeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+    public function index()
     {
-		return view('home');
-	}
-
-    public function desktop()
-    {
-        $import = new Config();
-        $css = $import::callCss();
-        $js = $import::callJs();
-        $img = $import::callImg();
-        $fnt = $import::callFont();
-        $plg = $import::callPlugins();
+            return view('home');
+    }
+    
+    public function index_front(){
+        $import = new \ecantina\Config();
+        $css    = $import::callCss();
+        $js     = $import::callJs();
+        $img    = $import::callImg();
+        $fnt    = $import::callFont();
+        $plg    = $import::callPlugins();
         $data['css'] = $css;
         $data['js'] = $js;
         $data['img'] = $img;
+        $data['fnt'] = $fnt;
+        $data['plg'] = $plg;
+        
+        return view('frontEnd/_index',$data);
+    }
+
+    public function desktop()
+    {
+        $import = new \ecantina\Config();
+        $css    = $import::callCss();
+        $js     = $import::callJs();
+        $img    = $import::callImg();
+        $fnt    = $import::callFont();
+        $plg    = $import::callPlugins();
+        $data['css'] = $css;
+        $data['js'] = $js;
+        $data['img'] = $img;    
         $data['fnt'] = $fnt;
         $data['plg'] = $plg;
 

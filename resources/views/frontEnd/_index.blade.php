@@ -5,16 +5,16 @@
 	<meta name="description" content="Your description goes here" />
 	<meta name="keywords" content="your,keywords,goes,here" />
 	<meta name="author" content="Your Name" />
-	<link rel="stylesheet" type="text/css" href="variant-classic.css" title="Variant Classic" media="screen,projection" />
-	<title>Variant Classic v1.0</title>
+	<link rel="stylesheet" type="text/css" href="{{$css}}variant-classic.css" title="Variant Classic" media="screen,projection" />
+	<title>E | Cantina</title>
 </head>
 
 <body>
 <div id="top"><div class="inner">
 
 	<div id="topleft">
-		<h1><a href="index.html">Variant Classic v1.0</a></h1>
-		<p>A free website template by Andreas Viklund...</p>
+		<h1><a href="index.html">Usuario: </a></h1>
+		<p>Nombre del usuario</p>
 	</div>
 
 	<div id="topright">

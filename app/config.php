@@ -1,23 +1,25 @@
 <?php
+namespace ecantina;
+
 class Config{
-    public function callCss(){
-        return "../resources/views/template/dist/css/";
+    public static function callCss(){
+        return "template/dist/css/";
     }
 
-    public function callJs(){
-        return "../resources/views/template/dist/js/";
+    public static function callJs(){
+        return "template/dist/js/";
     }
 
-    public function callImg(){
-        return "../resources/views/template/dist/img/";
+    public static function callImg(){
+        return "template/dist/img/";
     }
 
-    public function callFont(){
-        return "../resources/views/template/dist/fonts/";
+    public static function callFont(){
+        return "template/dist/fonts/";
     }
 
-    public function callPlugins(){
-        return "../resources/views/template/plugins/";
+    public static function callPlugins(){
+        return "template/plugins/";
     }
 }
 ?>

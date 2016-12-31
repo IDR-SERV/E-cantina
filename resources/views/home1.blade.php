@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+var_dump($css.'bootstrap.min.css');
+?>
 <html>
 <head>
   <meta charset="utf-8">

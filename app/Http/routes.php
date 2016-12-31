@@ -15,6 +15,8 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('front', 'HomeController@index_front');
+
 Route::get('desktop','HomeController@desktop');
 
 Route::controllers([
