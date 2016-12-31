@@ -15,5 +15,9 @@ class Config{
     public function callFont(){
         return "../resources/views/template/dist/fonts/";
     }
+
+    public function callPlugins(){
+        return "../resources/views/template/plugins/";
+    }
 }
 ?>

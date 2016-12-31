@@ -1,6 +1,10 @@
 <?php namespace ecantina\Http\Controllers;
+use ecantina\Config;
+
 
 class HomeController extends Controller {
+
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -20,7 +24,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		//$this->middleware('auth');
 	}
 
 	/**
@@ -29,8 +33,25 @@ class HomeController extends Controller {
 	 * @return Response
 	 */
 	public function index()
-	{
+    {
 		return view('home');
 	}
+
+    public function desktop()
+    {
+        $import = new Config();
+        $css = $import::callCss();
+        $js = $import::callJs();
+        $img = $import::callImg();
+        $fnt = $import::callFont();
+        $plg = $import::callPlugins();
+        $data['css'] = $css;
+        $data['js'] = $js;
+        $data['img'] = $img;
+        $data['fnt'] = $fnt;
+        $data['plg'] = $plg;
+
+        return view('home1', $data);
+    }
 
 }
