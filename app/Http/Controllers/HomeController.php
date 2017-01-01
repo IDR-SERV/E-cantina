@@ -43,11 +43,15 @@ class HomeController extends Controller {
         $img    = $import::callImg();
         $fnt    = $import::callFont();
         $plg    = $import::callPlugins();
+        $pic    = $import::callPics();
+        $ico    = $import::callIco();
         $data['css'] = $css;
         $data['js'] = $js;
         $data['img'] = $img;
         $data['fnt'] = $fnt;
         $data['plg'] = $plg;
+        $data['pic'] = $pic;
+        $data['ico'] = $ico;
         
         return view('frontEnd/_index',$data);
     }
@@ -60,11 +64,15 @@ class HomeController extends Controller {
         $img    = $import::callImg();
         $fnt    = $import::callFont();
         $plg    = $import::callPlugins();
+        $pic    = $import::callPics();
+        $ico    = $import::callIco();
         $data['css'] = $css;
         $data['js'] = $js;
         $data['img'] = $img;    
         $data['fnt'] = $fnt;
         $data['plg'] = $plg;
+        $data['pic'] = $pic;
+        $data['ico'] = $ico;
 
         return view('home1', $data);
     }

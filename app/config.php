@@ -21,5 +21,13 @@ class Config{
     public static function callPlugins(){
         return "plugins/";
     }
+    
+    public static function callPics(){
+        return "pictures/";
+    }
+    
+    public static function callIco(){
+        return "ionicons/css/";
+    }
 }
 ?>
